@@ -1,0 +1,98 @@
+#thank-you-page {
+  .thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+      text-align: center;
+      color: #5b7098;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px;
+      margin-top: 71px;
+      width: 400px;
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
+
+    .icon-holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: #f8921f;
+        margin-right: 15px;
+        font-size: 52px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+
+    .finance-it-banner {
+      height: 456px;
+      width: 1000px;
+      max-width: 100%;
+      background-color: #2b3a56;
+      background-image: url('../Images/finance-it-bg.png');
+      margin-top: 70px;
+      margin-bottom: 300px;
+      padding: 82px 111px;
+      @media screen and (max-width: 740px) {
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      @media screen and (max-width: 673px) {
+        padding: 50px;
+      }
+
+      @media screen and (max-width: 552px) {
+        text-align: center
+      }
+      h4 {
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: -1.5px;
+        margin-bottom: 23px;   
+        margin-top: 0px; 
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.24px;
+        margin-bottom: 0px;      
+      }
+
+      a {
+        box-shadow: 0 6px 57px rgba(0, 0, 0, 0.44), inset 0 2px 0 rgba(255, 255, 255, 0.53);
+        border-radius: 10px;
+        border: 1px solid #14c083;
+        background-color: #14cd8b;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%);        
+        color: #ffffff;
+        font-family: Lato;
+        font-size: 23px;
+        font-weight: 500;
+        letter-spacing: -0.27px;    
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 380px;
+        max-width: 100%;
+        height: 90px;
+        margin-top: 40px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: none;
+        }  
+      }
+    }
+  }
+}

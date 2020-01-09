@@ -1,0 +1,23 @@
+.lightboxcover {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.81);
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  .lightbox {
+    width: 630px;
+    height: 450px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -315px;
+    top: 60px;
+    padding: 30px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+}
