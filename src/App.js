@@ -76,6 +76,7 @@ const Refer = lazy(() => import('./Containers/Refer'));
 const Staff = lazy(() => import('./Containers/Staff'));
 const AgmChristmasParty2019 = lazy(() => import('./Containers/AgmChristmasParty2019'));
 const Warranty = lazy(() => import('./Containers/Warranty'));
+const WarrantyClaimForm = lazy(() => import('./Containers/WarrantyClaimForm'));
 
 function RedirectWithStatus({ from, to, status }) {
   return (
@@ -165,7 +166,8 @@ function App() {
             <Route exact path="/staff" component={Staff} />
             <Route exact path="/our-team/christmas-party-2019" component={AgmChristmasParty2019} />
             <Route exact path="/warranty" component={Warranty} />
-            
+            <Route exact path="/warranty-claim-form" component={WarrantyClaimForm} />
+
 
             {/* OLD BLOG POST and PAGE REDIRECT */}
             <RedirectWithStatus status={301} from="/figuring-out-the-best-flooring-material-for-your-basement" to="/post/figuring-out-the-best-flooring-material-for-your-basement" />
