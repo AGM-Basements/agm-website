@@ -77,6 +77,7 @@ const Staff = lazy(() => import('./Containers/Staff'));
 const AgmChristmasParty2019 = lazy(() => import('./Containers/AgmChristmasParty2019'));
 const Warranty = lazy(() => import('./Containers/Warranty'));
 const WarrantyClaimForm = lazy(() => import('./Containers/WarrantyClaimForm'));
+const PaymentReceipt = lazy(() => import('./Containers/PaymentReceipt'));
 
 function RedirectWithStatus({ from, to, status }) {
   return (
@@ -167,6 +168,7 @@ function App() {
             <Route exact path="/our-team/christmas-party-2019" component={AgmChristmasParty2019} />
             <Route exact path="/warranty" component={Warranty} />
             <Route exact path="/warranty-claim-form" component={WarrantyClaimForm} />
+            <Route exact path="/payment-receipt" component={PaymentReceipt} />
 
 
             {/* OLD BLOG POST and PAGE REDIRECT */}

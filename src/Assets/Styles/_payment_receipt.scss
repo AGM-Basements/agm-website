@@ -1,0 +1,35 @@
+#payment-receipt-container {
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#card-styles {
+  background-color: #192e44;
+  border-radius: 25px;
+  padding-left: 2rem !important;
+  padding: 1rem;
+}
+
+.card-data {
+  font-size: 1.75rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.action-button {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  background-color: #00aede;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 'bold';
+  border-radius: 30px;
+}
