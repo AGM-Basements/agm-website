@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
-import { find } from 'lodash';
-import GeneralBanner from '../Common/BannerParts/GeneralBanner';
-import { BLOG_POSTS } from '../Constants/BlogPosts';
+import React, { Component } from "react";
+import { Helmet } from "react-helmet";
+import { find } from "lodash";
+import GeneralBanner from "../Common/BannerParts/GeneralBanner";
+import { BLOG_POSTS } from "../Constants/BlogPosts";
 
 class SingleBlog extends Component {
-  static propTypes = {
-  };
+  static propTypes = {};
 
   state = {
     currentPost: {}
@@ -14,7 +13,7 @@ class SingleBlog extends Component {
 
   render() {
     const currentPost = find(BLOG_POSTS, post => {
-      return post.slug === this.props.match.params.slug
+      return post.slug === this.props.match.params.slug;
     });
 
     return (
@@ -22,11 +21,14 @@ class SingleBlog extends Component {
         {currentPost ? (
           <>
             <Helmet>
-              <title>AGM Basements | {currentPost.title || 'Blog'}</title>
+              <title>AGM Basements | {currentPost.title || "Blog"}</title>
             </Helmet>
-            <GeneralBanner title={currentPost.title || ''} />
-            <div className="container">
-              <div className="post-content" dangerouslySetInnerHTML={{__html: currentPost.content}}></div>
+            <GeneralBanner title={currentPost.title || ""} />
+            <div className="container sticky-nav-top-margin">
+              <div
+                className="post-content"
+                dangerouslySetInnerHTML={{ __html: currentPost.content }}
+              ></div>
             </div>
           </>
         ) : (

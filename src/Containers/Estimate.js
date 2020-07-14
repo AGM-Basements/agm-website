@@ -8,6 +8,15 @@ const Testimonials = React.lazy(() => import('../Common/Testimonials'));
 const EstimateServices = React.lazy(() => import('./EstimateParts/Services'));
 
 class Estimate extends Component {
+  constructor(props) {
+    super(props);
+    this.useEffect = this.useEffect.bind(this);
+  }
+
+  useEffect() {
+    window.scrollTo(0, 0)
+  };
+
   static propTypes = {
   };
 
@@ -37,8 +46,8 @@ class Estimate extends Component {
             </Suspense>
           </div>
 
-          <div className="w-100 text-center mb-5">
-            <a href="#main-header" className="btn blue-btn">Schedule an Estimate</a>
+          <div onClick={this.useEffect} className="w-100 text-center mb-5">
+            <a className="btn blue-btn">Schedule an Estimate</a>
           </div>
         </div>
       </>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="460px" height="60px" viewBox="0 0 345 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Rectangle-12</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.1%" y="-47.3%" width="110.3%" height="194.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Quote-to-Scope-Project" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1221.000000, -83.000000)" fill="#E30057" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(396.000000, 0.000000)">
+                <g id="Group" filter="url(#filter-1)" transform="translate(829.000000, 83.000000)">
+                    <polygon id="Rectangle-12" points="0 1 341 0 341 37 21.3997931 34.1659472"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

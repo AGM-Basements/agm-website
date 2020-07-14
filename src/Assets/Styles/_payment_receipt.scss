@@ -1,35 +1,242 @@
 #payment-receipt-container {
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 #card-styles {
-  background-color: #192e44;
-  border-radius: 25px;
-  padding-left: 2rem !important;
-  padding: 1rem;
+    background-color: #192e44;
+    padding: 1rem 2rem 0.5rem 2rem !important;
 }
 
 .card-data {
-  font-size: 1.75rem;
-  color: #fff;
-  font-weight: 100;
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 100;
+    line-height: 2.0rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
 }
 
 .card-title {
-  font-weight: bold;
+    font-weight: bold;
 }
 
+#card-styles .card-label {
+    width: 40%;
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 3.0rem;
+    font-weight: 100;
+}
+
+#card-styles .card-value {
+    width: 52%;
+    color: #FFFFFF;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 3.0rem;
+    font-weight: 100;
+}
+
+#card-styles .card-value img {
+    width: 1.5rem;
+    margin-right: 0.8rem;
+}
+
+.clear {
+    clear: both;
+}
+
+.rel {
+    position: relative;
+}
+
+/* Braintree Hosted Fields styling classes and set card images*/
+#card-image {
+    position: absolute;
+    top: 0.6em;
+    right: -0.3rem;
+    width: 44px;
+    height: 28px;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/346994/card_sprite.png);
+    background-size: 86px 458px;
+    border-radius: 4px;
+    background-position: -100px 0;
+    background-repeat: no-repeat;
+}
+#card-image.visa {
+    background-position: 0 -398px;
+}
+#card-image.master-card {
+    background-position: 0 -281px;
+}
+#card-image.american-express {
+    background-position: 0 -370px;
+}
+#card-image.discover {
+    background-position: 0 -163px;
+}
+#card-image.maestro {
+    background-position: 0 -251px;
+}
+#card-image.jcb {
+    background-position: 0 -221px;
+}
+#card-image.diners-club {
+    background-position: 0 -133px;
+}
+.hosted-field {
+    height: 3.0rem;
+    width: 52%;
+    background-color: #FFFFFF;
+    color: #192e44;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+input.hosted-field {
+    width: 100%;
+}
+.payment-reciept input.hosted-field {
+    width: 80%;
+}
+.braintree-hosted-fields-focused {
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.braintree-hosted-fields-invalid {
+    border: solid 2px #FF0000;
+}
+/* Braintree Hosted Fields styling classes*/
+
 .action-button {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: #fff;
-  background-color: #00aede;
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 'bold';
-  border-radius: 30px;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    background-color: #00aede;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 'bold';
+    position: relative;
+}
+
+.action-button.disabled {
+    cursor: auto;
+    opacity: 0.7;
+}
+
+.action-button img {
+    width: 2.0rem;
+    margin-right: 1.0rem;
+    vertical-align: sub;
+}
+
+.modal-container {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.modal-container .close-icon {
+    color: #FFFFFF;
+    position: absolute;
+    right: 0.2rem;
+    top: -0.2rem;
+    cursor: pointer;
+}
+
+.modal-container .card-data {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.modal-container input {
+    background-color: #FFFFFF;
+    font-size: 1.0rem;
+    padding: 1.0rem;
+    color: #192e44;
+    font-weight: 100;
+    border-radius: 25px;
+    border: none;
+}
+
+.modal-container input::-webkit-input-placeholder { /* Edge */
+    text-align: center;
+}
+  
+.modal-container input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-align: center;
+}
+  
+.modal-container input::placeholder {
+    text-align: center;
+}
+
+.modal-container p {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 100;
+}
+
+.modal-container .action-button {
+    cursor: pointer;
+    color: #192e44;
+    background-color: #FFFFFF;
+    margin-top: 1.0rem;
+    display: inline-block;
+    border-radius: 30px;
+    min-width: 15.0rem;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    #card-styles {
+        padding: 1rem !important;
+    }
+    .action-button {
+        margin-top: 1rem;
+    }
+    .payment-container {
+        margin-top: 3rem;
+    }
+    .ReactModal__Content {
+        width: 85% !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+    #card-styles {
+        padding: 1rem !important;
+    }
+    .action-button {
+        margin-top: 1rem;
+    }
+    .payment-container {
+        margin-top: 3rem;
+    }
+    .ReactModal__Content {
+        width: 85% !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    #card-styles div {
+        width: 100% !important;
+    }
+    #card-styles .card-label {
+        text-align: left;
+    }
+    .payment-reciept input.hosted-field {
+        width: 100% !important;
+    }
 }

@@ -16,8 +16,67 @@
     top: 60px;
     padding: 30px;
     overflow: hidden;
+    z-index: 9999;
     img {
       max-width: 100%;
     }
+  }
+}
+.x-button {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  position: absolute;
+  cursor: pointer;
+  right: 2rem;
+  top: 0;
+  svg {
+    font-size: 2rem;
+  }
+  @media (min-width: 300px) and (max-width: 450px){
+    font-size: 1rem;
+    right: 1rem;
+  }
+}
+.next-button {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 100;
+  position: absolute;
+  cursor: pointer;
+  right: 1.5rem;
+  top: 45%;
+  transform: translate(-40%, -100%);
+  svg {
+    font-size: 5rem;
+    @media (min-width: 300px) and (max-width: 450px){
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 450px){
+    font-size: 1rem;
+    right: 0.5rem;
+    top: 60%;
+    transform: translate(0%, -100%);
+  }
+}
+.prev-button {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 100;
+  position: absolute;
+  cursor: pointer;
+  top: 45%;
+  transform: translate(40%, -100%);
+  svg {
+    font-size: 5rem;
+    @media (min-width: 300px) and (max-width: 450px){
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 450px){
+    font-size: 1rem;
+    top: 60%;
+    transform: translate(0%, -100%);
   }
 }

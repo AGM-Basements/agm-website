@@ -345,6 +345,9 @@
 
 #process {
   padding-bottom: 100px;
+  @media screen and (max-width: 778px) {
+    padding-bottom: 0;
+  }
   h2 {
     color: #192e44;
     font-family: 'arial', sans-serif;
@@ -412,7 +415,10 @@
 }
 
 #new-inner-recent-work {
-  margin-bottom: 200px;
+    margin-bottom: 200px;
+    @media screen and (max-width: 571px) {
+        margin-bottom: 57px;
+    }
   .section-title {
     display: flex;
     align-items: center;
@@ -435,6 +441,7 @@
       @media screen and (max-width: 960px) {
         margin-right: 0px;
         text-align: center;
+        margin-top: 1.0rem;
       }
     }
 

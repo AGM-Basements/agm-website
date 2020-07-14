@@ -34,7 +34,7 @@ class CustomerInfo extends Component {
         street_address_line_two,
         city,
         state_province_region,
-        postal_code,
+        postal_code
       };
       this.props.stepComplete(stepOneInfo);
     } else {
