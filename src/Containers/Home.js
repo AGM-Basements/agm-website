@@ -257,8 +257,8 @@ class Home extends Component {
                     As the first company to specialize exclusively in basement
                     renovation, AGM Basements has listened to customers for over
                     20 years, and has developed a tried and true process focused
-                    on you. We’re here to help you realize your dream basement,
-                    to make the best decisions for your investment, and for your
+                    on you. We’re here to help you realize your dream basement
+                    to make the best decisions for your investment, for your
                     home and your family.
                   </p>
                   <div className="sub-services">
